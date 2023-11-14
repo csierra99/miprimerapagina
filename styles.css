@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*===================================================== 
+    header 
+=====================================================*/
+/* header > a {
+  background-color: orangered;
+}
+header nav {
+  background-color: aqua;
+} */
+
+header {
+  background-color: rgba(34, 33, 31, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+}
+
+header .logo {
+  padding-left: 30px;
+}
+
+header .logo a {
+  text-decoration: none;
+  color: bisque;
+  /* font-size: 3em; */
+}
+
+header nav {
+  padding-right: 30px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav .menu-checkbtn {
+  float: right;
+  font-size: 25px;
+  color: white;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#header-menu-check {
+  display: none;
+}
+
+/*===================================================== 
+    main 
+=====================================================*/
+main .seccion-1 {
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+main .seccion-2 img {
+  width: 100%;
+}
+
+main .seccion-3 {
+  padding: 10px;
+}
+
+main .seccion-3 .encabezado {
+  color: peru;
+}
+
+main .seccion-3 .contenido {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+main .seccion-3 .contenido .tarjeta {
+  width: 200px;
+  margin: 10px;
+}
+
+main .seccion-3 .contenido .tarjeta .tarjeta-imagen {
+  border-radius: 10px;
+  width: 100px;
+}
+
+main .seccion-3 .contenido .tarjeta .tarjeta-contenido p {
+  text-align: justify;
+}
+main .seccion-3 .contenido .tarjeta .tarjeta-contenido a {
+  color: peru;
+  text-decoration: none;
+}
+
+/*===================================================== 
+    footer 
+=====================================================*/
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer > a {
+  position: fixed;
+  bottom: 22px;
+  right: 39px;
+}
+
+footer .fuente-acento {
+  color: darkgoldenrod;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+#footer-contacto{
+  background-color: #eeeeee;
+  text-align: center;
+}
+#footer-contacto p{
+  margin-bottom: 0px;
+}
+#footer-contacto form{  
+  margin: 0px 50px 50px 50px; 
+  border: 1px solid #d6d9dc;
+  border-radius: 10px;
+  padding: 30px;
+}
+#footer-contacto form .form-row{
+  margin-bottom: 20px;
+  display: flex;
+}
+#footer-contacto form .form-row label{
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  margin-right: 3px;
+}
+#footer-contacto form .form-row input[type="text"],
+#footer-contacto form .form-row input[type="email"]{
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+#footer-contacto form .form-row textarea{
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  
+  resize: none;
+  width: 100%;  
+}
+#footer-contacto form .form-row button{
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #5995da;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;  
+  margin-left: 85px;
+}
+#footer-contacto form .form-row button:hover{
+  background-color: #76aeed;
+}
+
+
+
+#footer-redes-sociales {
+  background-color: #22211f;
+  text-align: center;
+}
+#footer-redes-sociales ul {
+  list-style: none;
+  padding: 0;
+}
+#footer-redes-sociales ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/*===================================================== 
+    Media query
+=====================================================*/
+@media (max-width: 768px) {
+  /*========= header =========*/
+  header {
+    background-color: burlywood;
+  }
+
+  header nav .menu-checkbtn {
+    display: block;
+  }
+
+  header nav ul {
+    display: block;
+    background-color: #2c3e50;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 60px;
+    left: 100%;
+    transition: left 0.5s;
+  }
+
+  /* #header-menu-check:checked ~ ul {
+    left: 0%;
+    display: block;
+  } */
+
+  header .active ul {
+    left: 0%;
+  }
+
+  header nav ul li {
+    margin: 50px 0px;
+    line-height: 30px;
+  }
+
+
+  /*========= main =========*/
+  main .seccion-1 {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main .seccion-1 .acerca-de {
+    text-align: justify;
+  }
+
+  main .seccion-3 .encabezado {
+    color: peru;
+    text-align: center;
+  }
+
+
+  /*========= footer =========*/
+  #footer-contacto form .form-row{
+    flex-direction: column;
+  }
+  #footer-contacto form .form-row label{
+    margin-bottom: 3px;
+    text-align: initial;
+  }  
+  #footer-contacto form .form-row button{
+    margin-left: 0px;
+  }
+}

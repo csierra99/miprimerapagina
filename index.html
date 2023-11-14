@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primera web</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header id="encabezado">
+      <h1 class="logo">
+        <a href="https://egg.live/" class="fuente-acento">Mi web</a>
+      </h1>        
+
+      <nav>
+        <!-- <input type="checkbox" id="header-menu-check"/>
+        <label for="header-menu-check" class="menu-checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label> -->
+        <label for="header-menu-check" class="menu-checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+  
+        <ul class="menu">
+          <li><a href="inicio.html">Inicio</a></li>
+          <li><a href="#acerca">Acerca de mi</a></li>
+          <li><a href="#trabajos">Trabajos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="seccion-principal">
+      <section class="seccion-1">
+        <div class="acerca-de">
+          <h2>Acerca de mí</h2>
+          <p class="parrafo1">
+            ¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.
+          </p>
+          <p class="parrafo2">
+            Me llamo Carlos, nací en Cartagena y vivo en Bogotá. Me gusta la
+            musica Salsa. Me gusta la programación y espero poder ayudar a las
+            personas a mostrar lo que hacen.
+          </p>
+        </div>
+
+        <div class="acerca-imagen">
+          <img src="img/hero-img.jpg" alt="imagen personal" />
+        </div>
+      </section>
+
+      <section class="seccion-2">
+        <img src="img/carrusel-img.jpg" alt="imagen de carrusel" />
+      </section>
+
+      <section class="seccion-3">
+        <div class="encabezado">
+          <h3>Trabajos</h3>
+        </div>          
+
+        <div class="contenido">
+          <article class="tarjeta">
+            <img class="tarjeta-imagen" src="img/trabajos.jpg" alt="trabajos">
+            
+            <div class="tarjeta-contenido">
+              <h5>Titulo 1</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aperiam modi assumenda quae odit, totam tenetur doloremque ab at sapiente ipsa ipsum nostrum natus sed ipsam facilis dolor laboriosam quis.</p>
+              <a href="">Leer mas</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img class="tarjeta-imagen" src="img/trabajos.jpg" alt="trabajos">
+            
+            <div class="tarjeta-contenido">
+              <h5>Titulo 1</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aperiam modi assumenda quae odit, totam tenetur doloremque ab at sapiente ipsa ipsum nostrum natus sed ipsam facilis dolor laboriosam quis.</p>
+              <a href="">Leer mas</a>
+            </div>
+          </article>
+          
+          <article class="tarjeta">
+            <img class="tarjeta-imagen" src="img/trabajos.jpg" alt="trabajos">
+            
+            <div class="tarjeta-contenido">
+              <h5>Titulo 1</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aperiam modi assumenda quae odit, totam tenetur doloremque ab at sapiente ipsa ipsum nostrum natus sed ipsam facilis dolor laboriosam quis.</p>
+              <a href="">Leer mas</a>
+            </div>
+          </article>            
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <a href="https://egg.live/">
+        <i class="fa-solid fa-heart"></i> 
+      </a>
+      
+      <div id="footer-contacto">
+        <h3 class="fuente-acento">Contacto</h3>
+        <p>¡Esperamos tu consulta!</p>
+        <form id="form" class="formulario" method="get">
+          <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="csierra@hotmail.com" required>
+          </div>
+          <div class="form-row">
+            <label for="mensaje">Mensajes</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+          </div>
+          <div class="form-row">
+            <button type="submit" id="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="footer-redes-sociales">
+        <p class="fuente-acento">Redes Sociales</p>
+        <nav>
+          <ul>
+            <li><a href>Instagram</a></li>
+            <li><a href>TikTok</a></li>
+            <li><a href>Whatsaap</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  
+    <script src="https://kit.fontawesome.com/289743d986.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
