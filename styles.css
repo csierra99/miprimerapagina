@@ -107,6 +107,14 @@ main .seccion-3 .contenido .tarjeta .tarjeta-contenido a {
   text-decoration: none;
 }
 
+main .greeting{
+  background-color: #5995da;
+  border: 2px solid red;
+  text-align: center;
+  font-size: large;
+  padding: 10px;
+}
+
 /*===================================================== 
     footer 
 =====================================================*/
